@@ -92,6 +92,11 @@ body {
     border: 1px solid #eae8e8;
 }
 
+.horizontal-tablink-container:hover{
+    box-shadow: 3px 1px 1px #6b6767;
+    z-index: 10;
+}
+
 .horizontal-tablink-container.active{
     background-color: #f4f4f4;
     color: #616161;
