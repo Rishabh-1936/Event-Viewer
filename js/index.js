@@ -60,10 +60,10 @@ function content_div_func(id){
 
 function horizontal_tablink_func(id,name){
     return `
-    <div class="horizontal-tablink-container ${id}" name="${id}">
+    <li class="horizontal-tablink-container ${id}" name="${id}">
         <button class="horizontal-tablink" onclick="openEvent(event, '${id}','horizontal')">${name}</button>
         <div class="close" onclick="close_tab(event)">&times;</div>
-    </div>` 
+    </li>` 
 }
 
 window.onload=function(){
