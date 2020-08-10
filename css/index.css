@@ -2,25 +2,27 @@
 body {
     /* font-family: "Lato", sans-serif; */
     font-family: 'Open Sans', sans-serif;
+    color: #151515;
+    overflow: hidden;
 }
+
 .container{
-    border:2px solid black;
+    /* border:2px solid black; */
     height: 95vh;
 }
 
-/* Style the tab */
+
 .vertical-tab {
   float: left;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
   width: 15%;
   /* height: 300px; */
-  height: 92vh;
+  height: 90vh;
   overflow-y: scroll;
 }
 
 
-/* Style the buttons inside the tab */
 .vertical-tab button {
   display: block;
   background-color: inherit;
@@ -32,20 +34,20 @@ body {
   text-align: left;
   cursor: pointer;
   transition: 0.3s;
-  font-size: 17px;
+  font-size: 1rem;
 }
 
-/* Change background color of buttons on hover */
+
 .vertical-tab button:hover {
   background-color: #ddd;
 }
 
-/* Create an active/current "tab button" class */
+
 .vertical-tab button.active {
   background-color: #ccc;
 }
 
-/* Style the tab content */
+
 .tabcontent {
   float: left;
   padding: 0px 12px;
@@ -54,13 +56,10 @@ body {
   border-left: none;
   /* height: 300px; */
   display: none;
-  height: 85vh;
+  height: 90vh;
   overflow-y: scroll;
 }
 
-.top-bar{
-    display: flex;
-}
 
 .horizontal-tablink {
     border: none;
@@ -87,18 +86,19 @@ body {
     display: flex;
     align-items: center;
     height: auto;
-
     border-radius: 10px 15px 0px 0px;
     border: 1px solid #eae8e8;
 }
 
 .horizontal-tablink-container:hover{
-    box-shadow: 3px 1px 1px #6b6767;
+    /* box-shadow: 3px 1px 1px #6b6767; */
+    box-shadow: 0px 1px 4px rgba(0,0,0,.5);
     z-index: 10;
 }
 
 .horizontal-tablink-container.active{
-    background-color: #f4f4f4;
+    /* background-color: #f4f4f4; */
+    background-color: #fdfdfd;;
     color: #616161;
 }
 .horizontal-tablink-container.active .horizontal-tablink{
@@ -115,3 +115,41 @@ body {
     display: inline-block;
 }
 
+.top-side-tab{
+    width: 15%;
+}
+.top-side-tab button{
+    width: 100%;
+    border: none;
+    padding: 12px;
+    font-size: 1.1rem;
+    background: transparent;
+}
+
+.top-bar-container{
+    display: flex;
+    background-color: #f5f5f5;
+}
+.top-bar{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 0.3rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #808080a8;
+    border-radius: 10px;
+}
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #2196F3;
+    border-radius: 10px;
+  }
