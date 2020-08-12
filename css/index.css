@@ -79,6 +79,11 @@ body {
 
 /*--------------------------------------Content------------------------------------------------*/
 
+.content{
+  letter-spacing: 1px;
+  line-height: 1.3rem;
+}
+
 .tabcontent {
   float: left;
   padding: 0px 12px;
@@ -88,6 +93,7 @@ body {
   display: none;
   height: 90vh;
   overflow-y: scroll;
+  padding-top: 1rem;
 }
 
 /*--------------------X----------------Content-------------------------X----------------------*/
